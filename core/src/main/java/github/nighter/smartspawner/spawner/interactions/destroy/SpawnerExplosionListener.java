@@ -5,12 +5,10 @@ import github.nighter.smartspawner.api.events.SpawnerExplodeEvent;
 import github.nighter.smartspawner.extras.HopperService;
 import github.nighter.smartspawner.spawner.data.SpawnerManager;
 import github.nighter.smartspawner.spawner.properties.SpawnerData;
-import github.nighter.smartspawner.utils.BlockPos;
 import org.bukkit.Bukkit;
 import org.bukkit.ExplosionResult;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityExplodeEvent;
@@ -119,11 +117,7 @@ public class SpawnerExplosionListener implements Listener {
         return false;
     }
 
-    // TODO: deduplicate
     public void cleanupAssociatedHopper(Block block) {
-        Block blockBelow = block.getRelative(BlockFace.DOWN);
-        if (plugin.getHopperConfig().isHopperEnabled() && blockBelow.getType() == Material.HOPPER) {
-            hopperService.getRegistry().remove(new BlockPos(blockBelow.getLocation()));
-        }
+        hopperService.getTracker().removeBelowSpawner(block);
     }
 }

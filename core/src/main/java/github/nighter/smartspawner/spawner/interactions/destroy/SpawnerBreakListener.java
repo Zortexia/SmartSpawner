@@ -11,7 +11,6 @@ import github.nighter.smartspawner.spawner.gui.synchronization.SpawnerGuiViewMan
 import github.nighter.smartspawner.language.MessageService;
 import github.nighter.smartspawner.spawner.item.SpawnerItemFactory;
 import github.nighter.smartspawner.spawner.utils.SpawnerLocationLockManager;
-import github.nighter.smartspawner.utils.BlockPos;
 import lombok.Getter;
 import org.bukkit.*;
 import org.bukkit.block.Block;
@@ -542,12 +541,8 @@ public class SpawnerBreakListener implements Listener {
         }
     }
 
-    // TODO: deduplicate
     public void cleanupAssociatedHopper(Block block) {
-        Block blockBelow = block.getRelative(BlockFace.DOWN);
-        if (plugin.getHopperConfig().isHopperEnabled() && blockBelow.getType() == Material.HOPPER) {
-            hopperService.getRegistry().remove(new BlockPos(blockBelow.getLocation()));
-        }
+        hopperService.getTracker().removeBelowSpawner(block);
     }
 
     interface BreakPluginContext {
