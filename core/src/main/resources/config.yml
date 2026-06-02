@@ -62,9 +62,13 @@ spawner_break:
   # Durability impact on tools when breaking a spawner
   durability_loss: 1    # Number of durability points deducted
 
+  # Allow sneaking while breaking a Smart Spawner stack to remove up to 64 spawners at once.
+  # If disabled, sneaking breaks only one spawner, the same as a normal break.
+  sneak_break: true
+
   # Automatically sell storage items and claim remaining XP only when a Smart Spawner is fully removed
   # Requires sell integration + smartspawner.sellall (true by default)
-  auto_sell_and_claim_exp_on_break: true
+  sell_and_xp_break: true
 
   # Enchantment Requirements for successful spawner collection
   silk_touch:

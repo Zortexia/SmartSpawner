@@ -457,6 +457,13 @@ public class SpawnerSettingsConfig {
         }
         return spawnerDropChances.getOrDefault(entityType, 100.0);
     }
+
+    /**
+     * Check whether an entity has an explicit spawner item drop chance configured.
+     */
+    public boolean hasSpawnerDropChance(EntityType entityType) {
+        return entityType != null && entityType != EntityType.UNKNOWN && spawnerDropChances.containsKey(entityType);
+    }
     
     /**
      * Get all loaded materials

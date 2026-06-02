@@ -40,6 +40,7 @@ Understanding the **Default** column in the permissions table:
 | `smartspawner.changetype`        | Allow changing spawner type with spawn egg           | `op`        |
 | `smartspawner.stack`             | Allow stacking spawners                              | `true`      |
 | `smartspawner.break`             | Allow breaking spawners                              | `true`      |
+| `smartspawner.break.bypassdropchance` | Always receive spawner drops and bypass drop chance stacker restrictions | `op`        |
 | `smartspawner.sellall`           | Allow selling items in spawner storage GUI           | `true`      |
 
 <br>
@@ -47,4 +48,4 @@ Understanding the **Default** column in the permissions table:
 
 ---
 
-*Last update: March 22, 2026*
+*Last update: June 2, 2026*

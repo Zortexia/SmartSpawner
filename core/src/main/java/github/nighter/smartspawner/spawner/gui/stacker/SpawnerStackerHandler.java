@@ -4,6 +4,7 @@ import github.nighter.smartspawner.SmartSpawner;
 import github.nighter.smartspawner.api.events.SpawnerRemoveEvent;
 import github.nighter.smartspawner.api.events.SpawnerStackEvent;
 import github.nighter.smartspawner.spawner.gui.main.SpawnerMenuUI;
+import github.nighter.smartspawner.spawner.config.SpawnerSettingsConfig;
 import github.nighter.smartspawner.spawner.item.SpawnerItemFactory;
 import github.nighter.smartspawner.spawner.properties.SpawnerData;
 import github.nighter.smartspawner.language.LanguageManager;
@@ -36,6 +37,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class SpawnerStackerHandler implements Listener {
+    private static final String DROP_CHANCE_BYPASS_PERMISSION = "smartspawner.break.bypassdropchance";
     private final SmartSpawner plugin;
     private final MessageService messageService;
     private final SpawnerMenuUI spawnerMenuUI;
@@ -108,6 +110,11 @@ public class SpawnerStackerHandler implements Listener {
         event.setCancelled(true);
 
         SpawnerData spawner = holder.getSpawnerData();
+        if (!canUseStacker(player, spawner)) {
+            player.closeInventory();
+            messageService.sendMessage(player, "spawner_stacker_drop_chance_blocked");
+            return;
+        }
 
         // Check for cooldown - fast path return
         UUID playerId = player.getUniqueId();
@@ -190,6 +197,12 @@ public class SpawnerStackerHandler implements Listener {
     public void onInventoryOpen(InventoryOpenEvent event) {
         if (!(event.getPlayer() instanceof Player player)) return;
         if (!(event.getInventory().getHolder(false) instanceof SpawnerStackerHolder holder)) return;
+
+        if (!canUseStacker(player, holder.getSpawnerData())) {
+            event.setCancelled(true);
+            messageService.sendMessage(player, "spawner_stacker_drop_chance_blocked");
+            return;
+        }
 
         // Track player as viewer of this spawner
         UUID playerId = player.getUniqueId();
@@ -1056,5 +1069,14 @@ public class SpawnerStackerHandler implements Listener {
             return false;
         }
         return plugin.getIntegrationManager().getFloodgateHook().isBedrockPlayer(player);
+    }
+
+    private boolean canUseStacker(Player player, SpawnerData spawner) {
+        if (player.hasPermission(DROP_CHANCE_BYPASS_PERMISSION)) {
+            return true;
+        }
+
+        SpawnerSettingsConfig settingsConfig = plugin.getSpawnerSettingsConfig();
+        return settingsConfig == null || !settingsConfig.hasSpawnerDropChance(spawner.getEntityType());
     }
 }

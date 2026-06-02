@@ -68,6 +68,10 @@ MOB_NAME:
 
 If `drop_chance` is omitted for an entity, SmartSpawner uses `100.0`, so the spawner item always drops. The default `spawners_settings.yml` does not enable a drop chance value by default; it only includes a commented example under `ALLAY`.
 
+When `sneak_break` is enabled and an entity has `drop_chance` configured, players cannot use sneak breaking to remove a whole Smart Spawner stack for that entity. They must break one spawner at a time so each drop chance roll remains clear and controlled.
+
+Players with `smartspawner.break.bypassdropchance` bypass this chance entirely: they always receive spawner drops, can sneak break stacks, and can open the stacker GUI for spawners with `drop_chance`.
+
 ```yaml
 ALLAY:
   experience: 0

@@ -71,7 +71,8 @@ spawner_break:
     - DIAMOND_PICKAXE
     - NETHERITE_PICKAXE
   durability_loss: 1
-  auto_sell_and_claim_exp_on_break: true
+  sneak_break: true
+  sell_and_xp_break: true
   silk_touch:
     required: true
     level: 1
@@ -81,9 +82,18 @@ spawner_break:
 - `direct_to_inventory`: If `true`, collected spawners go directly into the player's inventory instead of dropping on the ground.
 - `required_tools`: Tools that are allowed to break Smart Spawners.
 - `durability_loss`: Durability removed from the tool per break.
-- `auto_sell_and_claim_exp_on_break`: When a Smart Spawner is fully removed, automatically sells stored items and claims remaining XP. This requires a sell integration and the `smartspawner.sellall` permission.
+- `sneak_break`: Allows sneaking while breaking a Smart Spawner stack to remove up to 64 spawners at once. If `false`, sneaking breaks only one spawner, the same as a normal break.
+- `sell_and_xp_break`: When a Smart Spawner is fully removed, automatically sells stored items and claims remaining XP. This requires a sell integration and the `smartspawner.sellall` permission.
 - `silk_touch.required`: Whether Silk Touch is required to collect the spawner.
 - `silk_touch.level`: Minimum Silk Touch level required.
+
+:::note[Drop Chance and Stack Breaking]
+If `sneak_break` is enabled and a Smart Spawner entity has `drop_chance` configured in `spawners_settings.yml`, sneak stack breaking is blocked for that spawner. Players must break one spawner at a time so drop chance rolls cannot remove a large stack in one action.
+:::
+
+:::note[Drop Chance Bypass]
+Players with `smartspawner.break.bypassdropchance` always receive spawner drops, can use sneak stack breaking, and can open the stacker GUI even when the spawner has `drop_chance` configured.
+:::
 
 ## Natural/Vanilla Spawner Settings
 
