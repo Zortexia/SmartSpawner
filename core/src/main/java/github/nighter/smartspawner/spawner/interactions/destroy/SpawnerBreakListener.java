@@ -9,7 +9,7 @@ import github.nighter.smartspawner.spawner.data.SpawnerManager;
 import github.nighter.smartspawner.spawner.gui.main.SpawnerMenuAction;
 import github.nighter.smartspawner.spawner.gui.synchronization.SpawnerGuiViewManager;
 import github.nighter.smartspawner.language.MessageService;
-import github.nighter.smartspawner.config.SpawnerBreakConfig;
+import github.nighter.smartspawner.config.Config;
 import github.nighter.smartspawner.spawner.config.SpawnerSettingsConfig;
 import github.nighter.smartspawner.spawner.item.SpawnerItemFactory;
 import github.nighter.smartspawner.spawner.utils.SpawnerLocationLockManager;
@@ -29,11 +29,9 @@ import org.bukkit.event.block.BlockDamageEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.configuration.file.FileConfiguration;
 
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.logging.Logger;
 
 public class SpawnerBreakListener implements Listener {
     private static final int MAX_STACK_SIZE = 64;
@@ -41,10 +39,9 @@ public class SpawnerBreakListener implements Listener {
     private final BreakPluginContext plugin;
     private final MessageService messageService;
     private final SpawnerManager spawnerManager;
-    private final HopperService hopperService;
     private final SpawnerItemFactory spawnerItemFactory;
     private final SpawnerLocationLockManager locationLockManager;
-    private final SpawnerBreakConfig breakConfig;
+    private Config breakConfig;
 
     public SpawnerBreakListener(SmartSpawner plugin) {
         this(new SmartSpawnerBreakPluginContext(plugin));
@@ -54,14 +51,13 @@ public class SpawnerBreakListener implements Listener {
         this.plugin = plugin;
         this.messageService = plugin.getMessageService();
         this.spawnerManager = plugin.getSpawnerManager();
-        this.hopperService = plugin.getHopperService();
         this.spawnerItemFactory = plugin.getSpawnerItemFactory();
         this.locationLockManager = plugin.getSpawnerLocationLockManager();
-        this.breakConfig = new SpawnerBreakConfig(plugin::getConfig, plugin.getLogger());
+        loadConfig();
     }
 
     public void loadConfig() {
-        breakConfig.load();
+        this.breakConfig = Config.get();
     }
 
     @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
@@ -594,11 +590,15 @@ public class SpawnerBreakListener implements Listener {
     }
 
     public void cleanupAssociatedHopper(Block block) {
-        hopperService.getTracker().removeBelowSpawner(block);
+        HopperService currentHopperService = plugin.getHopperService();
+        if (currentHopperService == null) {
+            return;
+        }
+
+        currentHopperService.getTracker().removeBelowSpawner(block);
     }
 
     interface BreakPluginContext {
-        FileConfiguration getConfig();
         MessageService getMessageService();
         SpawnerManager getSpawnerManager();
         HopperService getHopperService();
@@ -610,8 +610,6 @@ public class SpawnerBreakListener implements Listener {
         SpawnerMenuAction getSpawnerMenuAction();
         github.nighter.smartspawner.spawner.sell.SpawnerSellManager getSpawnerSellManager();
         github.nighter.smartspawner.spawner.lootgen.SpawnerRangeChecker getRangeChecker();
-        github.nighter.smartspawner.extras.HopperConfig getHopperConfig();
-        Logger getLogger();
     }
 
     private static final class SmartSpawnerBreakPluginContext implements BreakPluginContext {
@@ -621,7 +619,6 @@ public class SpawnerBreakListener implements Listener {
             this.plugin = plugin;
         }
 
-        @Override public FileConfiguration getConfig() { return plugin.getConfig(); }
         @Override public MessageService getMessageService() { return plugin.getMessageService(); }
         @Override public SpawnerManager getSpawnerManager() { return plugin.getSpawnerManager(); }
         @Override public HopperService getHopperService() { return plugin.getHopperService(); }
@@ -633,7 +630,5 @@ public class SpawnerBreakListener implements Listener {
         @Override public SpawnerMenuAction getSpawnerMenuAction() { return plugin.getSpawnerMenuAction(); }
         @Override public github.nighter.smartspawner.spawner.sell.SpawnerSellManager getSpawnerSellManager() { return plugin.getSpawnerSellManager(); }
         @Override public github.nighter.smartspawner.spawner.lootgen.SpawnerRangeChecker getRangeChecker() { return plugin.getRangeChecker(); }
-        @Override public github.nighter.smartspawner.extras.HopperConfig getHopperConfig() { return plugin.getHopperConfig(); }
-        @Override public Logger getLogger() { return plugin.getLogger(); }
     }
 }

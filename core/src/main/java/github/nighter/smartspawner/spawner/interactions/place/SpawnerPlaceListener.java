@@ -37,15 +37,12 @@ public class SpawnerPlaceListener implements Listener {
     private final SmartSpawner plugin;
     private final MessageService messageService;
     private final SpawnerManager spawnerManager;
-    private final HopperService hopperService;
-
     private final Map<UUID, Long> lastPlacementTime = new ConcurrentHashMap<>();
 
     public SpawnerPlaceListener(SmartSpawner plugin) {
         this.plugin = plugin;
         this.messageService = plugin.getMessageService();
         this.spawnerManager = plugin.getSpawnerManager();
-        this.hopperService = plugin.getHopperService();
     }
 
     @EventHandler
@@ -381,9 +378,14 @@ public class SpawnerPlaceListener implements Listener {
     }
 
     private void setupHopperIntegration(Block block) {
+        HopperService currentHopperService = plugin.getHopperService();
+        if (currentHopperService == null || !plugin.getHopperConfig().isHopperEnabled()) {
+            return;
+        }
+
         Block blockBelow = block.getRelative(BlockFace.DOWN);
-        if (plugin.getHopperConfig().isHopperEnabled() && blockBelow.getType() == Material.HOPPER) {
-            hopperService.getTracker().tryAdd(blockBelow);
+        if (blockBelow.getType() == Material.HOPPER) {
+            currentHopperService.getTracker().tryAdd(blockBelow);
         }
     }
 

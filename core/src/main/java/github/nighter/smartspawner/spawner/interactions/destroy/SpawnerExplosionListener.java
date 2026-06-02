@@ -20,7 +20,6 @@ import java.util.List;
 public class SpawnerExplosionListener implements Listener {
     private final SmartSpawner plugin;
     private final SpawnerManager spawnerManager;
-    private final HopperService hopperService;
 
     // Cached config values — refreshed via loadConfig() on reload
     private boolean protectSpawners;
@@ -29,7 +28,6 @@ public class SpawnerExplosionListener implements Listener {
     public SpawnerExplosionListener(SmartSpawner plugin) {
         this.plugin = plugin;
         this.spawnerManager = plugin.getSpawnerManager();
-        this.hopperService = plugin.getHopperService();
         loadConfig();
     }
 
@@ -118,6 +116,11 @@ public class SpawnerExplosionListener implements Listener {
     }
 
     public void cleanupAssociatedHopper(Block block) {
-        hopperService.getTracker().removeBelowSpawner(block);
+        HopperService currentHopperService = plugin.getHopperService();
+        if (currentHopperService == null) {
+            return;
+        }
+
+        currentHopperService.getTracker().removeBelowSpawner(block);
     }
 }
