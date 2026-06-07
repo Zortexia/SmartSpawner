@@ -59,27 +59,27 @@ item_spawner:
       - ''
   # Material-specific sections override default per key. Unspecified keys use default.
   DIAMOND:
-    name: '&#38D9FF{entity} Spawner'
-    loot_items: '  &#E8FBFF • {amount} {item_name} &#00B8D9({chance}%)'
-    loot_items_empty: '  &#E8FBFF •  None'
+    name: '&#00E5FF{entity} Spawner'
+    loot_items: '  &#EAFDFF • {amount} {item_name} &#00B8D4({chance}%)'
+    loot_items_empty: '  &#EAFDFF •  None'
     lore:
       - ''
-      - ' &#38D9FF ᴅᴇᴛᴀɪʟ:'
-      - '  &#E8FBFF • &fEXP give: &#00B8D9{exp}'
+      - ' &#00E5FF ᴅᴇᴛᴀɪʟ:'
+      - '  &#EAFDFF • &fEXP give: &#00B8D4{exp}'
       - ''
-      - ' &#38D9FF ᴅʀᴏᴘꜱ:'
+      - ' &#00E5FF ᴅʀᴏᴘꜱ:'
       - '{loot_items}'
       - ''
-  GOLD_INGOT:
-    name: '&#FFB300{entity} Spawner'
-    loot_items: '  &#FFF4CC • {amount} {item_name} &#FFC107({chance}%)'
-    loot_items_empty: '  &#FFF4CC •  None'
+  AMETHYST_SHARD:
+    name: '&#B66CFF{entity} Spawner'
+    loot_items: '  &#F5ECFF • {amount} {item_name} &#D6A5FF({chance}%)'
+    loot_items_empty: '  &#F5ECFF •  None'
     lore:
       - ''
-      - ' &#FFB300 ᴅᴇᴛᴀɪʟ:'
-      - '  &#FFF4CC • &fEXP give: &#FFD54F{exp}'
+      - ' &#B66CFF ᴅᴇᴛᴀɪʟ:'
+      - '  &#F5ECFF • &fEXP give: &#D6A5FF{exp}'
       - ''
-      - ' &#FFB300 ᴅʀᴏᴘꜱ:'
+      - ' &#B66CFF ᴅʀᴏᴘꜱ:'
       - '{loot_items}'
       - ''
 
