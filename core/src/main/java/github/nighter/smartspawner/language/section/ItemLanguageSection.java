@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.BiFunction;
 import java.util.function.BooleanSupplier;
 import java.util.function.Supplier;
@@ -23,6 +24,7 @@ public final class ItemLanguageSection {
     private final LanguageCache cache;
     private final PlaceholderFormatter placeholderFormatter;
     private final BiFunction<String, Map<String, String>, String> formatter;
+    private final Map<String, String> variantKeyCache = new ConcurrentHashMap<>();
 
     public ItemLanguageSection(
             Supplier<LocaleData> localeSupplier,
@@ -68,6 +70,31 @@ public final class ItemLanguageSection {
         if (!enabled.getAsBoolean()) return key;
         String name = locale().items().getString(key);
         return name == null ? key : formatter.apply(name, placeholders);
+    }
+
+    public String variantKey(String section, String variant, String field) {
+        if (!enabled.getAsBoolean()) return section + "." + field;
+
+        String cacheKey = section + "|" + variant + "|" + field;
+        return variantKeyCache.computeIfAbsent(cacheKey, ignored -> resolveVariantKey(section, variant, field));
+    }
+
+    public void clearCache() {
+        variantKeyCache.clear();
+    }
+
+    private String resolveVariantKey(String section, String variant, String field) {
+        String variantKey = section + "." + variant + "." + field;
+        if (locale().items().contains(variantKey)) {
+            return variantKey;
+        }
+
+        String defaultKey = section + ".default." + field;
+        if (locale().items().contains(defaultKey)) {
+            return defaultKey;
+        }
+
+        return section + "." + field;
     }
 
     public String[] lore(String key) {

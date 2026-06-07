@@ -216,6 +216,10 @@ public class LanguageManager {
         return items.name(key, placeholders);
     }
 
+    public String getItemVariantKey(String section, String variant, String field) {
+        return items.variantKey(section, variant, field);
+    }
+
     public String[] getItemLore(String key) {
         return items.lore(key);
     }
@@ -281,6 +285,7 @@ public class LanguageManager {
 
     public void clearCache() {
         cache.clear();
+        items.clearCache();
         guiLanguage.clearCache();
         commandGuiLanguage.clearCache();
     }
