@@ -1,24 +1,19 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import catppuccin from "@catppuccin/starlight";	
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://docs.smartspawner.site',
 	integrations: [
 		starlight({
-			plugins: [
-				catppuccin({
-				
-				}),
-			],
 			title: 'SmartSpawner Documentation',
 			customCss: [
 				'./src/styles/custom.css',
 			],
 			description: 'A customizable spawner GUI plugin that generates mob drops and experience directly, without spawning mobs',
 			favicon: './Spawner.png',
+			disable404Route: true,
 			// logo: {
 			// 		src: './src/assets/logo.png',
 			// },

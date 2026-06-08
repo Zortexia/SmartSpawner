@@ -37,6 +37,10 @@ public class SpawnerHighlightManager implements Listener {
     private static final long HIGHLIGHT_DURATION_TICKS = 30 * 20L;
     // How many ticks the "result" bossbar stays visible after the scan finishes (5 s)
     private static final long BOSSBAR_RESULT_TICKS = 5 * 20L;
+    private static final String BOSSBAR_ANALYZING_FALLBACK = "Scanning nearby spawners... {percent}%";
+    private static final String BOSSBAR_FOUND_FALLBACK = "Found {count} spawner(s) within {radius} blocks.";
+    private static final String BOSSBAR_NOT_FOUND_FALLBACK = "No spawners found within {radius} blocks.";
+    private static final String VIEW_GUI_BUTTON_FALLBACK = " [View in GUI]";
 
     private final SmartSpawner plugin;
     /** One session per online player UUID. */
@@ -96,7 +100,7 @@ public class SpawnerHighlightManager implements Listener {
 
         BossBar bossBar = BossBar.bossBar(
                 Component.text(plugin.getLanguageManager().getCommandConfig(
-                        "near.bossbar.analyzing", "\uD83D\uDD0D \u1D00\u0274\u1D00\u029F\u028F\u1D22\u026A\u0274\u0262... {percent}%",
+                        "near.bossbar.analyzing", BOSSBAR_ANALYZING_FALLBACK,
                         Map.of("percent", "0")), NamedTextColor.AQUA),
                 0f,
                 BossBar.Color.BLUE,
@@ -150,7 +154,7 @@ public class SpawnerHighlightManager implements Listener {
                     float progress = (float) (i + 1) / total;
                     int pct = (int) (progress * 100);
                     bossBar.name(Component.text(plugin.getLanguageManager().getCommandConfig(
-                            "near.bossbar.analyzing", "\uD83D\uDD0D \u1D00\u0274\u1D00\u029F\u028F\u1D22\u026A\u0274\u0262... {percent}%",
+                            "near.bossbar.analyzing", BOSSBAR_ANALYZING_FALLBACK,
                             Map.of("percent", String.valueOf(pct))), NamedTextColor.AQUA));
                     bossBar.progress(progress);
                 }
@@ -215,12 +219,12 @@ public class SpawnerHighlightManager implements Listener {
         // Update bossbar to show the final result
         if (count == 0) {
             session.bossBar.name(Component.text(plugin.getLanguageManager().getCommandConfig(
-                    "near.bossbar.not_found", "\u2717 \u0274\u1D0F \u0280\u1D18\u1D00\u1D21\u0274\u1D07\u0280\u0280 \uA730\u1D0F\u1D1C\u0274\u1D05 \u1D21\u026A\u1D1B\u029C\u026A\u0274 {radius} \u0299\u029F\u1D0F\u1D04\u1D0B\u0280",
+                    "near.bossbar.not_found", BOSSBAR_NOT_FOUND_FALLBACK,
                     Map.of("radius", String.valueOf(radius))), NamedTextColor.RED));
             session.bossBar.color(BossBar.Color.RED);
         } else {
             session.bossBar.name(Component.text(plugin.getLanguageManager().getCommandConfig(
-                    "near.bossbar.found", "\u2713 \uA730\u1D0F\u1D1C\u0274\u1D05 {count} \u0280\u1D18\u1D00\u1D21\u0274\u1D07\u0280(\u0280) \u1D21\u026A\u1D1B\u029C\u026A\u0274 {radius} \u0299\u029F\u1D0F\u1D04\u1D0B\u0280",
+                    "near.bossbar.found", BOSSBAR_FOUND_FALLBACK,
                     Map.of("count", String.valueOf(count), "radius", String.valueOf(radius))), NamedTextColor.GREEN));
             session.bossBar.color(BossBar.Color.GREEN);
         }
@@ -244,7 +248,7 @@ public class SpawnerHighlightManager implements Listener {
 
             Component viewGuiHint = Component.text()
                     .append(Component.text(
-                            plugin.getLanguageManager().getCommandConfig("near.view_gui.button", "[\u1D20\u026A\u1D07\u1D21 \u026A\u0274 \u0262\u1D1C\u026A]"),
+                            plugin.getLanguageManager().getCommandConfig("near.view_gui.button", VIEW_GUI_BUTTON_FALLBACK),
                             NamedTextColor.GOLD)
                             .clickEvent(ClickEvent.callback(audience -> {
                                 if (audience instanceof Player clickPlayer) {
