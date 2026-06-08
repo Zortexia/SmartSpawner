@@ -7,19 +7,24 @@ export default defineConfig({
 	site: 'https://docs.smartspawner.site',
 	integrations: [
 		starlight({
-			title: 'SmartSpawner Documentation',
+			title: 'SmartSpawner',
 			customCss: [
 				'./src/styles/custom.css',
 			],
 			description: 'A customizable spawner GUI plugin that generates mob drops and experience directly, without spawning mobs',
 			favicon: './Spawner.png',
 			disable404Route: true,
-			// logo: {
-			// 		src: './src/assets/logo.png',
-			// },
+			logo: {
+				src: './src/assets/Spawner.png',
+				alt: 'SmartSpawner',
+			},
+			tableOfContents: {
+				minHeadingLevel: 2,
+				maxHeadingLevel: 2,
+			},
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/NighterDevelopment/SmartSpawner' },
-				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/zrnyG4CuuT' },
+				{ icon: 'discord', label: 'Discord', href: 'https://dsc.gg/nighterdevelopment' },
 			],
 			components: {
 				Footer: './src/overrides/Footer.astro',
