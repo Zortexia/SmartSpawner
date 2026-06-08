@@ -11,6 +11,9 @@
     "deploy": "npm run build && gh-pages -d dist",
     "add-timestamps": "node scripts/add-timestamps.js"
   },
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "dependencies": {
     "@astrojs/starlight": "^0.39.3",
     "sharp": "^0.34.2",
