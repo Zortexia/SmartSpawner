@@ -26,6 +26,8 @@ A good developer experience is important for both core contributors and addon de
 
 Contributions that improve documentation, tooling, testing, or developer APIs are encouraged when they remain aligned with the project's performance and architectural goals.
 
+---
+
 ## Core vs Addons
 
 As a general guideline, a feature should be considered for an addon if it:
@@ -38,6 +40,8 @@ As a general guideline, a feature should be considered for an addon if it:
 Features that are broadly useful, foundational, and beneficial to the majority of users may be appropriate for inclusion in the core.
 
 When in doubt, prefer extending developer APIs rather than expanding core functionality.
+
+---
 
 ## Code Standards
 
@@ -68,6 +72,8 @@ When in doubt, prefer extending developer APIs rather than expanding core functi
 * Add tests for new behavior when appropriate.
 * For performance-sensitive changes, include benchmark results and a brief explanation of how they were measured.
 
+---
+
 ## Review Process
 
 All contributions are reviewed based on:
@@ -79,6 +85,8 @@ All contributions are reviewed based on:
 * Long-term support cost
 
 Acceptance is not determined solely by the size of a contribution. Small improvements that align with the project's goals are highly valued.
+
+---
 
 ## Code of Conduct
 
