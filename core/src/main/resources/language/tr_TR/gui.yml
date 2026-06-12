@@ -193,7 +193,7 @@ button_sell_confirm:
     - ''
     - '&#5DB5F1 ▸ Satışı onaylamak için tıkla!'
 
-button_sell_confirm_with_XP:
+button_sell_confirm_with_exp:
   name: '&fSatışı Onayla &#5DB5F1ve XP Al'
   lore:
     - ''
@@ -368,9 +368,9 @@ bedrock:
 
     button_names:
       storage: 'Depoyu Aç'
-      XP: 'XP Topla'
+      exp: 'XP Topla'
       stacker: 'Stack Yönet'
-      sell_and_XP: 'Sat + XP Topla'
+      sell_and_exp: 'Sat + XP Topla'
       sell_all: 'Eşyaları Sat'
       view_info: 'Bilgileri Gör'
       back: 'Geri'
@@ -378,9 +378,9 @@ bedrock:
     button_images:
       storage: 'https://i.pinimg.com/736x/7a/28/50/7a28504d8446ab0ad670757cfa32fe59.jpg'
       stacker: 'https://cdn.modrinth.com/data/9tQwxSFr/f0f1cc267f587a39acd2c820cfe6b29d0f2ccae3.png'
-      sell_and_XP: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8a/Gold_Ingot_JE4_BE2.png/revision/latest?cb=20200224211607'
+      sell_and_exp: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8a/Gold_Ingot_JE4_BE2.png/revision/latest?cb=20200224211607'
       sell_all: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8a/Gold_Ingot_JE4_BE2.png/revision/latest?cb=20200224211607'
-      XP: 'https://minecraft.wiki/images/Bottle_o%27_Enchanting.gif'
+      exp: 'https://minecraft.wiki/images/Bottle_o%27_Enchanting.gif'
       view_info: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9f/Information_sign.png/revision/latest/scale-to-width-down/268?cb=20200105100749'
 
     # Available placeholders (same as spawner_info_item):
