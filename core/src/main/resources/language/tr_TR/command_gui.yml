@@ -5,11 +5,11 @@ general_navigation:
   previous_page:
     name: '&#37eb9aÖnceki Sayfa'
     lore:
-      - '&#2cc483 ▸ &#37eb9a{target_page}. &#f8f8ffSayfaya &#f8f8fdönmek için tıkla'
+      - '&#2cc483 ▸ &#37eb9a{target_page}. &#f8f8ffSayfaya &#f8f8ffdönmek için tıkla'
   next_page:
     name: '&#37eb9aSonraki Sayfa'
     lore:
-      - '&#2cc483 ▸ &#37eb9a{target_page}. &#f8f8ffSayfaya &#f8f8fgitmek için tıkla'
+      - '&#2cc483 ▸ &#37eb9a{target_page}. &#f8f8ffSayfaya &#f8f8ffgitmek için tıkla'
   close:
     name: '&#FF6B6BKapat'
     lore:
