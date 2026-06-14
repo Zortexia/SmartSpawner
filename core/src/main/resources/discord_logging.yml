@@ -74,284 +74,284 @@ logged_events:
 
 SPAWNER_PLACE:
   embed:
-    title: "✅ Spawner Placed"
-    description: "**{player}** placed a **{entity}** spawner"
+    title: "✅ Spawner Lehelyezve"
+    description: "**{player}** lehelyezett egy **{entity}** spawnert."
     color: "57F287"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "🐾 Entity"
+      - name: "🐾 Entitás"
         value: "`{entity}`"
         inline: true
-      - name: "🔢 Quantity"
+      - name: "🔢 Mennyiség"
         value: "`{quantity}`"
         inline: true
 
 SPAWNER_BREAK:
   embed:
-    title: "❌ Spawner Broken"
-    description: "**{player}** broke a **{entity}** spawner"
+    title: "❌ Spawner Kiütve"
+    description: "**{player}** kiüttöte a(z) **{entity}** spawnert."
     color: "ED4245"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "🔢 Quantity"
+      - name: "🔢 Mennyiség"
         value: "`{quantity}`"
         inline: true
 
 SPAWNER_EXPLODE:
   embed:
-    title: "💥 Spawner Destroyed by Explosion"
-    description: "A **{entity}** spawner was destroyed by an explosion"
+    title: "💥 Spawner Elpustítva"
+    description: "A(z) **{entity}** spawner fel lett robbantva."
     color: "FF6B6B"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "🔢 Quantity"
+      - name: "🔢 Mennyiség"
         value: "`{quantity}`"
         inline: true
 
 SPAWNER_STACK_HAND:
   embed:
-    title: "✋ Spawner Stacked by Hand"
-    description: "**{player}** stacked a **{entity}** spawner by hand"
+    title: "✋ Spawner Stackelve Kézzel"
+    description: "**{player}** stackelte a(z) **{entity}** spawnert kézzel."
     color: "FEE75C"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "➕ Added"
+      - name: "➕ Hozzáadva"
         value: "`{amount_added}`"
         inline: true
-      - name: "📦 New Stack"
+      - name: "📦 Új Stack"
         value: "`{new_stack_size}`"
         inline: true
 
 SPAWNER_STACK_GUI:
   embed:
-    title: "📦 Spawner Stacked via GUI"
-    description: "**{player}** stacked a **{entity}** spawner via GUI"
+    title: "📦 Spawner Stackelve GUI-jal"
+    description: "**{player}** stackelte a(z) **{entity}** spawner GUI-jal."
     color: "F1C40F"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "➕ Added"
+      - name: "➕ Hozzáadva"
         value: "`{amount_added}`"
         inline: true
-      - name: "📦 New Stack"
+      - name: "📦 Új Stack"
         value: "`{new_stack_size}`"
         inline: true
 
 SPAWNER_DESTACK_GUI:
   embed:
-    title: "📤 Spawner Destacked via GUI"
-    description: "**{player}** destacked a **{entity}** spawner"
+    title: "📤 Spawner Destackelte GUI-jal"
+    description: "**{player}** destackelte a(z) **{entity}** spawnert."
     color: "E67E22"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "🐾 Entity"
+      - name: "🐾 Entitás"
         value: "`{entity}`"
         inline: true
 
 SPAWNER_GUI_OPEN:
   embed:
-    title: "📋 Spawner GUI Opened"
-    description: "**{player}** opened the spawner GUI"
+    title: "📋 Spawner GUI Megnyitva"
+    description: "**{player}** megnyitotta a spawner GUI-t"
     color: "9B59B6"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "🐾 Entity"
+      - name: "🐾 Entitás"
         value: "`{entity}`"
         inline: true
 
 SPAWNER_STORAGE_OPEN:
   embed:
-    title: "📦 Storage GUI Opened"
-    description: "**{player}** opened the storage GUI"
+    title: "📦 Tároló GUI Megnyitva"
+    description: "**{player}** megnyitotta a spawner tároló GUI-t"
     color: "8E44AD"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "📄 Page"
+      - name: "📄 Oldal"
         value: "`{page}/{total_pages}`"
         inline: true
 
 SPAWNER_STACKER_OPEN:
   embed:
-    title: "🔢 Stacker GUI Opened"
-    description: "**{player}** opened the stacker GUI"
+    title: "🔢 Stacker GUI Megnyitva"
+    description: "**{player}** megnyitotta a spawner stacker GUI-t"
     color: "BB8FCE"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "🐾 Entity"
+      - name: "🐾 Entitás"
         value: "`{entity}`"
         inline: true
 
 SPAWNER_EXP_CLAIM:
   embed:
-    title: "✨ Experience Claimed"
-    description: "**{player}** collected experience from a spawner"
+    title: "✨ XP Begyűjtve a Spawnerből"
+    description: "**{player}** begyűjtötte a spawnerből az XP-t."
     color: "2ECC71"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "✨ XP Amount"
+      - name: "✨ XP Mennyiség"
         value: "`{exp_amount}`"
         inline: true
 
 SPAWNER_SELL_ALL:
   embed:
-    title: "💰 Items Sold"
-    description: "**{player}** sold items from a spawner"
+    title: "💰 Tárgyak Eladva a Tárolóból"
+    description: "**{player}** eladott minden tárgyat a spawner tárolóból."
     color: "27AE60"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "💰 Revenue"
+      - name: "💰 Bevétel"
         value: "`${total_price}`"
         inline: true
-      - name: "📦 Items Sold"
+      - name: "📦 Tárgyak Eladva"
         value: "`{items_sold}`"
         inline: true
 
 SPAWNER_ITEM_TAKE_ALL:
   embed:
-    title: "🎒 Items Taken from Storage"
-    description: "**{player}** took all items from a spawner"
+    title: "🎒 Tárgyak Elvéve a Tárolóból"
+    description: "**{player}** ki vette az összes tárgyat a spawner tárolóból."
     color: "1ABC9C"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "📦 Taken"
+      - name: "📦 Elvett Tárgyak"
         value: "`{items_taken}`"
         inline: true
-      - name: "📦 Remaining"
+      - name: "📦 Maradt"
         value: "`{items_left}`"
         inline: true
 
 SPAWNER_ITEM_DROP:
   embed:
-    title: "🗑️ Item Dropped from Storage"
-    description: "**{player}** dropped an item from storage"
+    title: "🗑️ Tárgyak Kidobva a Tárolóból"
+    description: "**{player}** kidobott egy tárgyat a spawnerből."
     color: "16A085"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
 
 SPAWNER_ITEMS_SORT:
   embed:
-    title: "🔃 Storage Items Sorted"
-    description: "**{player}** sorted items in storage"
+    title: "🔃 Tárgyak Rendezve"
+    description: "**{player}** rendezte a spawner tároló tárgyait."
     color: "48C9B0"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "🔃 Sort Key"
+      - name: "🔃 Rendezés Típus"
         value: "`{sort_item}`"
         inline: true
 
 SPAWNER_ITEM_FILTER:
   embed:
-    title: "🔍 Item Filter Toggled"
-    description: "**{player}** changed the item filter"
+    title: "🔍 Item Filter Megváltoztatva"
+    description: "**{player}** megváltoztatta a spawner item filter beállításait."
     color: "45B7AF"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
 
 SPAWNER_DROP_PAGE_ITEMS:
   embed:
-    title: "📄 Page Items Dropped"
-    description: "**{player}** dropped all items from a storage page"
+    title: "📄 Oldal Tárgyak Kidobva"
+    description: "**{player}** kidobta az aktuális oldalon lévő összes tárgyat a spawnerből."
     color: "138D75"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "📦 Dropped"
+      - name: "📦 Kidobva"
         value: "`{items_dropped}`"
         inline: true
-      - name: "📄 Page"
+      - name: "📄 Oldal"
         value: "`{page_number}`"
         inline: true
 
 SPAWNER_EGG_CHANGE:
   embed:
-    title: "🥚 Spawner Entity Changed"
-    description: "**{player}** changed a spawner's entity type"
+    title: "🥚 Spawner Entitás Megváltoztatva"
+    description: "**{player}** megváltoztatta a spawner entitását."
     color: "E91E63"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "📍 Location"
+      - name: "📍 Helyszín"
         value: "`{location}`"
         inline: false
-      - name: "🐾 New Type"
+      - name: "🐾 Új Típus"
         value: "`{entity}`"
         inline: true
 
 COMMAND_EXECUTE_PLAYER:
   embed:
-    title: "👤 Command Executed by Player"
-    description: "**{player}** ran a SmartSpawner command"
+    title: "👤 Parancs Végrehajtva Játékos Által"
+    description: "**{player}** futattot egy SmartSpawner parancsot."
     color: "5865F2"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "⚙️ Command"
+      - name: "⚙️ Parancs"
         value: "`{full_command}`"
         inline: false
 
 COMMAND_EXECUTE_CONSOLE:
   embed:
-    title: "🖥️ Command Executed by Console"
-    description: "Console ran a SmartSpawner command"
+    title: "🖥️ Konzolos Parancs Végrehajtás"
+    description: "Konzol futattot SmartSpawner parancsot."
     color: "3B5998"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "⚙️ Command"
+      - name: "⚙️ Parancs"
         value: "`{full_command}`"
         inline: false
 
 COMMAND_EXECUTE_RCON:
   embed:
-    title: "🔌 Command Executed via RCON"
-    description: "RCON ran a SmartSpawner command"
+    title: "🔌 Parancs Végrehajtva RCON-al"
+    description: "RCON futattot SmartSpawner parancsot."
     color: "7289DA"
     footer: "SmartSpawner • {time}"
     fields:
-      - name: "⚙️ Command"
+      - name: "⚙️ Parancs"
         value: "`{full_command}`"
         inline: false
 
