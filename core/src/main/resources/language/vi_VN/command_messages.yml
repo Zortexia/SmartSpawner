@@ -40,7 +40,7 @@ set:
     message: "&#FF4444Giá trị hoặc vị trí SmartSpawner không hợp lệ."
     sound: block.note_block.pling
   stack_size_exceeds_max:
-    message: "&#FF4444Số lượng xếp chồng &f{value} &#FF4444vượt quá giới hạn xếp chồng của spawner này: &f{max}"
+    message: "&#FF4444Số lượng stack &f{value} &#FF4444vượt quá giới hạn stack của spawner này: &f{max}"
     sound: block.note_block.pling
   location_required:
     message: "&#F0C857Console phải cung cấp vị trí: &#3498db/ss set <stack_size|range|delay> <value> <world> <x> <y> <z>"

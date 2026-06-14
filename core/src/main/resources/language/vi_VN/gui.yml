@@ -31,7 +31,7 @@ spawner_storage_item:
     - '   &fvà quản lý mọi vật phẩm'
     - '   &ftrong spawner này.'
     - ''
-    - ' &#5DB5F1★ ꜱᴜ̛́ᴄ ᴄʜᴜ̛́ᴀ: &f{percent_storage_rounded}%'
+    - ' &#5DB5F1★ ꜱứᴄ ᴄʜứᴀ: &f{percent_storage_rounded}%'
     - '{loot_items}'
     - ''
     - '&#5DB5F1 ▸ Nhấp để mở kho!'
@@ -70,100 +70,100 @@ spawner_info_item:
   name: ' &fᴛʜôɴɢ ᴛɪɴ &#5DB5F1ꜱᴘᴀᴡɴᴇʀ'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜôɴɢ ᴋê:'
-    - '   &8• &fXếp chồng: &e{stack_size}'
+    - ' &#5DB5F1ℹ ᴛʜốɴɢ ᴋê:'
+    - '   &8• &fStack: &e{stack_size}'
     - '   &8• &fPhạm vi: &e{range} &fkhối'
     - '   &8• &fSinh vật: &e{min_mobs}&f-&e{max_mobs}'
     - '   &8• &fThời gian chờ: &e{delay} &fgiây'
     - ''
-    - ' &#5DB5F1★ ʟᴀ̂̀ɴ ꜱɪɴʜ ᴛɪᴇ̂́ᴘ: &f{time}'
-    - '   &8• &fEXP: &e{percent_exp_rounded}%'
+    - ' &#5DB5F1★ ʟầɴ ꜱɪɴʜ ᴛɪếᴘ: &f{time}'
+    - '   &8• &fExp: &e{percent_exp_rounded}%'
     - '   &8• &fKho: &e{percent_storage_rounded}%'
     - '   &8• &fGiá trị bán: &a${total_sell_price}'
     - ''
-    - '&#5DB5F1 ▸ Chuột trái: &fBán và nhận EXP'
-    - '&#5DB5F1 ▸ Chuột phải: &fMở trình xếp chồng'
+    - '&#5DB5F1 ▸ Chuột trái: &fBán và nhận Exp'
+    - '&#5DB5F1 ▸ Chuột phải: &fMở stack'
   lore_no_shop:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜᴏ̂́ɴɢ ᴋᴇ̂:'
-    - '   &8• &fXếp chồng: &e{stack_size}'
+    - ' &#5DB5F1ℹ ᴛʜốɴɢ ᴋê:'
+    - '   &8• &fStack: &e{stack_size}'
     - '   &8• &fPhạm vi: &e{range} &fkhối'
     - '   &8• &fSinh vật: &e{min_mobs}&f-&e{max_mobs}'
     - '   &8• &fThời gian chờ: &e{delay} &fgiây'
     - ''
-    - ' &#5DB5F1★ ʟᴀ̂̀ɴ ꜱɪɴʜ ᴛɪᴇ̂́ᴘ: &f{time}'
-    - '   &8• &fEXP: &e{percent_exp_rounded}%'
+    - ' &#5DB5F1★ ʟầɴ ꜱɪɴʜ ᴛɪếᴘ: &f{time}'
+    - '   &8• &fExp: &e{percent_exp_rounded}%'
     - '   &8• &fKho: &e{percent_storage_rounded}%'
     - ''
-    - '&#5DB5F1 ▸ Nhấp để mở trình xếp chồng!'
-  lore_full: '&#FF4444ᴅ̵ᴀ̃ ᴅ̵ᴀ̂̀ʏ ꜱᴜ̛́ᴄ ᴄʜᴜ̛́ᴀ'
-  lore_inactive: '&#FF4444ᴋʜᴏ̂ɴɢ ʜᴏᴀ̣ᴛ ᴅ̵ᴏ̣̂ɴɢ'
-  lore_no_loot: '&#FF4444ᴄʜᴜ̛ᴀ ᴄᴀ̂́ᴜ ʜɪ̀ɴʜ ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ ʀᴏ̛ɪ'
+    - '&#5DB5F1 ▸ Nhấp để mở stack!'
+  lore_full: '&#FF4444đã đầʏ ꜱứᴄ ᴄʜứᴀ'
+  lore_inactive: '&#FF4444ᴋʜôɴɢ ʜᴏạᴛ độɴɢ'
+  lore_no_loot: '&#FF4444ᴄʜưᴀ ᴄấᴜ ʜìɴʜ ᴠậᴛ ᴘʜẩᴍ ʀơɪ'
 
 exp_info_item:
-  name: '&fɴʜᴀ̣̂ɴ &#5DB5F1ᴇxᴘ'
+  name: '&fɴʜậɴ &#5DB5F1ᴇxᴘ'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
-    - '  &8• &fNhận EXP hoặc dùng'
-    - '   &fEXP để sửa chữa'
+    - ' &#5DB5F1ℹ ᴛʜôɴɢ ᴛɪɴ:'
+    - '  &8• &fNhận Exp hoặc dùng'
+    - '   &fExp để sửa chữa'
     - '   &ftrang bị Mending &fcủa bạn.'
     - ''
-    - ' &#5DB5F1★ ꜱᴜ̛́ᴄ ᴄʜᴜ̛́ᴀ: &f{percent_exp_rounded}%'
-    - '  &8• &fEXP đã lưu: &a{current_exp}&f/&a{max_exp}'
+    - ' &#5DB5F1★ ꜱứᴄ ᴄʜứᴀ: &f{percent_exp_rounded}%'
+    - '  &8• &fExp đã lưu: &a{current_exp}&f/&a{max_exp}'
     - ''
-    - '&#5DB5F1 ▸ Nhấp để nhận EXP!'
+    - '&#5DB5F1 ▸ Nhấp để nhận Exp!'
 
 # ──────────────────────────────────────────────────────
 #              Spawner Stacker GUI
 # ──────────────────────────────────────────────────────
-gui_title_stacker: xᴇ̂́ᴘ ᴄʜᴏ̂̀ɴɢ ꜱᴘᴀᴡɴᴇʀ
+gui_title_stacker: ꜱᴛᴀᴄᴋ ꜱᴘᴀᴡɴᴇʀ
 
 button_spawner:
   name: '&f{ᴇɴᴛɪᴛʏ} &#5DB5F1ꜱᴘᴀᴡɴᴇʀ'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &#5DB5F1ℹ ᴛʜôɴɢ ᴛɪɴ:'
     - '  &8• &fSố lượng hiện tại: &e{stack_size}'
     - '  &8• &fGiới hạn tối đa: &e{max_stack_size}'
     - ''
     - '&#5DB5F1 ▸ Nhấp để trở về menu chính!'
 
 button_remove:
-  name: '&fɢᴏ̛̃ ʙᴏ̉ &#FF6B6B-{amount}'
+  name: '&fɢỡ ʙỏ &#FF6B6B-{amount}'
   lore:
     - ''
-    - ' &#FF6B6B⚠ ʜᴀ̀ɴʜ ᴅ̵ᴏ̣̂ɴɢ:'
+    - ' &#FF6B6B⚠ ʜàɴʜ độɴɢ:'
     - '  &8• &fBạn sẽ gỡ &e{amount} &fspawner'
     - '  &8• &fSố lượng hiện tại: &e{stack_size}'
     - ''
-    - '&#FF6B6B ▸ Nhấp để gỡ khỏi chồng!'
+    - '&#FF6B6B ▸ Nhấp để gỡ khỏi stack!'
 
 button_add:
-  name: '&fᴛʜᴇ̂ᴍ &#5DB5F1+{amount}'
+  name: '&fᴛʜêᴍ &#5DB5F1+{amount}'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ʜᴀ̀ɴʜ ᴅ̵ᴏ̣̂ɴɢ:'
+    - ' &#5DB5F1ℹ ʜàɴʜ độɴɢ:'
     - '  &8• &fBạn sẽ thêm &e{amount} &fspawner'
     - '  &8• &fSố lượng hiện tại: &e{stack_size}'
     - ''
-    - '&#5DB5F1 ▸ Nhấp để thêm vào chồng!'
+    - '&#5DB5F1 ▸ Nhấp để thêm vào stack!'
 
 button_remove_all:
-  name: '&fɢᴏ̛̃ ʙᴏ̉ &#FF6B6Bᴛᴀ̂́ᴛ ᴄᴀ̉'
+  name: '&fɢỡ ʙỏ &#FF6B6Bᴛấᴛ ᴄả'
   lore:
     - ''
-    - ' &#FF6B6B⚠ ʜᴀ̀ɴʜ ᴅ̵ᴏ̣̂ɴɢ:'
-    - '  &8• &fBạn sẽ lấy hết toàn bộ chồng.'
+    - ' &#FF6B6B⚠ ʜàɴʜ độɴɢ:'
+    - '  &8• &fBạn sẽ lấy hết toàn bộ stack.'
     - '  &8• &fSố lượng hiện tại: &e{stack_size}'
     - ''
-    - '&#FF6B6B ▸ Nhấp để làm trống chồng!'
+    - '&#FF6B6B ▸ Nhấp để làm trống stack!'
 
 button_add_all:
-  name: '&fᴛʜᴇ̂ᴍ &#5DB5F1ᴛᴀ̂́ᴛ ᴄᴀ̉'
+  name: '&fᴛʜêᴍ &#5DB5F1ᴛấᴛ ᴄả'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ʜᴀ̀ɴʜ ᴅ̵ᴏ̣̂ɴɢ:'
+    - ' &#5DB5F1ℹ ʜàɴʜ độɴɢ:'
     - '  &8• &fBạn sẽ thêm mọi spawner'
     - '   &ftương thích trong túi đồ.'
     - ''
@@ -172,20 +172,20 @@ button_add_all:
 # ──────────────────────────────────────────────────────
 #                Sell Confirmation GUI
 # ──────────────────────────────────────────────────────
-gui_title_sell_confirm: xᴀ́ᴄ ɴʜᴀ̣̂ɴ ʙᴀ́ɴ
+gui_title_sell_confirm: 'xáᴄ ɴʜậɴ ʙáɴ'
 
 button_sell_cancel:
-  name: '&fʜᴜ̉ʏ &#FF6B6Bʙᴀ́ɴ'
+  name: '&fʜủʏ &#FF6B6Bʙáɴ'
   lore:
     - ''
-    - ' &#FF6B6B⚠ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &#FF6B6B⚠ ᴛʜôɴɢ ᴛɪɴ:'
     - '  &8• &fNhấp để quay lại'
     - '   &fmà không bán gì cả.'
     - ''
     - '&#FF6B6B ▸ Nhấp để hủy!'
 
 button_sell_confirm:
-  name: '&fxᴀ́ᴄ ɴʜᴀ̣̂ɴ &#5DB5F1ʙᴀ́ɴ'
+  name: '&fxáᴄ ɴʜậɴ &#5DB5F1ʙáɴ'
   lore:
     - ''
     - ' &#5DB5F1ℹ Bạn sẽ nhận:'
@@ -194,12 +194,12 @@ button_sell_confirm:
     - '&#5DB5F1 ▸ Nhấp để xác nhận bán!'
 
 button_sell_confirm_with_exp:
-  name: '&fxᴀ́ᴄ ɴʜᴀ̣̂ɴ ʙᴀ́ɴ &#5DB5F1ᴠᴀ̀ ᴇxᴘ'
+  name: '&fxáᴄ ɴʜậɴ ʙáɴ &#5DB5F1ᴠà ᴇxᴘ'
   lore:
     - ''
     - ' &#5DB5F1ℹ Bạn sẽ nhận:'
     - '  &8• &fTiền: &a${total_sell_price}'
-    - '  &8• &fEXP: &a{current_exp}'
+    - '  &8• &fExp: &a{current_exp}'
     - ''
     - '&#5DB5F1 ▸ Nhấp để xác nhận!'
 
@@ -215,12 +215,12 @@ button_sell_confirm_with_exp:
 # {loot_items} - Expands to the generated loot item lines
 # Placeholders for button_sell_info.loot_items: {amount}, {item_name}, {chance}
 button_sell_info:
-  name: '&fʙᴀ́ɴ &#5DB5F1ᴛᴏ̂̉ɴɢ ᴋᴇ̂́ᴛ'
+  name: '&fʙáɴ &#5DB5F1ᴛổɴɢ ᴋếᴛ'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &#5DB5F1ℹ ᴛʜôɴɢ ᴛɪɴ:'
     - '{loot_items}'
-    - '  &8• &a+ &fEXP: &e{current_exp}'
+    - '  &8• &a+ &fExp: &e{current_exp}'
     - '  &8• &a+ &fTiền: &a${total_sell_price}'
   loot_items: '  &8• &#FF6B6B- &f{item_name}&f: &e{amount}'
   loot_items_empty: '  &8• &#FF6B6B- &fKhông có vật phẩm để bán'
@@ -237,7 +237,7 @@ button_sell_info:
 gui_title_storage: '[{current_page}/{total_pages}] ᴋʜᴏ ꜱᴘᴀᴡɴᴇʀ'
 
 navigation_button_previous:
-  name: '&#37eb9aᴛʀᴀɴɢ ᴛʀᴜ̛ᴏ̛́ᴄ'
+  name: '&#37eb9aᴛʀᴀɴɢ ᴛʀướᴄ'
   lore:
     - '&#2cc483 ▸ &#f8f8ffNhấp để đến trang &#37eb9a{target_page}'
 
@@ -247,58 +247,58 @@ navigation_button_next:
     - '&#2cc483 ▸ &#f8f8ffNhấp để đến trang &#37eb9a{target_page}'
 
 sell_button:
-  name: '&fʙᴀ́ɴ &aᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ'
+  name: '&fʙáɴ &aᴠậᴛ ᴘʜẩᴍ'
   lore:
     - ''
-    - ' &aℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &aℹ ᴛʜôɴɢ ᴛɪɴ:'
     - '  &8• &fBạn sẽ bán tất cả vật phẩm'
     - '   &ftrong kho.'
     - ''
     - '&a ▸ Nhấp để bán!'
 
 sell_and_exp_button:
-  name: '&fʙᴀ́ɴ ᴠᴀ̀ &aɴʜᴀ̣̂ɴ ᴇxᴘ'
+  name: '&fʙáɴ ᴠà &aɴʜậɴ ᴇxᴘ'
   lore:
     - ''
-    - ' &aℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &aℹ ᴛʜôɴɢ ᴛɪɴ:'
     - '  &8• &fBạn sẽ bán tất cả vật phẩm'
-    - '   &fvà nhận EXP đã lưu.'
+    - '   &fvà nhận Exp đã lưu.'
     - '  &8• &fTổng ước tính: &a${total_sell_price}'
     - ''
     - '&a ▸ Nhấp để tiếp tục!'
 
 return_button:
-  name: '&fǫᴜᴀʏ ʟᴀ̣ɪ &#FF6B6Bᴍᴇɴᴜ ᴄʜɪ́ɴʜ'
+  name: '&fǫᴜᴀʏ ʟạɪ &#FF6B6Bᴍᴇɴᴜ ᴄʜíɴʜ'
   lore:
     - ''
-    - ' &#dadadaℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &#dadadaℹ ᴛʜôɴɢ ᴛɪɴ:'
     - '  &8• &fNhấp để quay lại'
     - '   &fvề menu trước.'
     - ''
     - '&c ▸ Nhấp để quay lại!'
 
 take_all_button:
-  name: '&fʟᴀ̂́ʏ &#5DB5F1ᴛᴀ̂́ᴛ ᴄᴀ̉'
+  name: '&fʟấʏ &#5DB5F1ᴛấᴛ ᴄả'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &#5DB5F1ℹ ᴛʜôɴɢ ᴛɪɴ:'
     - '  &8• &fBạn sẽ lấy tất cả'
     - '   &fvật phẩm ở trang này.'
     - ''
     - '&#5DB5F1 ▸ Nhấp để lấy!'
 
 item_filter_button:
-  name: '&fʟᴏ̣ᴄ &#5DB5F1ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ ʀᴏ̛ɪ'
+  name: '&fʟọᴄ &#5DB5F1ᴠậᴛ ᴘʜẩᴍ ʀơɪ'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &#5DB5F1ℹ ᴛʜôɴɢ ᴛɪɴ:'
     - '  &8• &fCấu hình vật phẩm được phép'
     - '   &fvà bị chặn cho spawner này.'
     - ''
     - '&#5DB5F1 ▸ Nhấp để cấu hình bộ lọc!'
 
 sort_items_button:
-  name: '&fꜱᴀ̆́ᴘ xᴇ̂́ᴘ &#5DB5F1ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ'
+  name: '&fꜱắᴘ xếᴘ &#5DB5F1ᴠậᴛ ᴘʜẩᴍ'
   lore:
     - ''
     - '{available_items}'
@@ -309,37 +309,38 @@ sort_items_button:
   no_item: ' &7• Không có'
 
 drop_page_button:
-  name: '&fᴛʜᴀ̉ &#FF6B6Bᴛʀᴀɴɢ'
+  name: '&fᴛʜả &#FF6B6Bᴛʀᴀɴɢ'
   lore:
     - ''
-    - ' &#FF6B6B⚠ ᴄᴀ̉ɴʜ ʙᴀ́ᴏ:'
+    - ' &#FF6B6B⚠ ᴄảɴʜ ʙáᴏ:'
     - '  &8• &fBạn sẽ thả mọi vật phẩm'
     - '   &ftừ trang này xuống đất.'
     - ''
     - '&#FF6B6B ▸ Nhấp để thả!'
 
 collect_exp_button:
-  name: '&fɴʜᴀ̣̂ɴ &#5DB5F1ᴇxᴘ'
+  name: '&fɴʜậɴ &#5DB5F1ᴇxᴘ'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
-    - '  &8• &fEXP khả dụng: &a{current_exp}'
+    - ' &#5DB5F1ℹ ᴛʜôɴɢ ᴛɪɴ:'
+    - '  &8• &fExp khả dụng: &a{current_exp}'
     - ''
-    - '&#5DB5F1 ▸ Nhấp để nhận EXP!'
+    - '&#5DB5F1 ▸ Nhấp để nhận Exp!'
 
 storage_spawner_info_button:
   name: ''
+  lore:
 
 # ──────────────────────────────────────────────────────
 #             Filter Configuration GUI
 # ──────────────────────────────────────────────────────
-gui_title_filter_config: '    ᴄʜᴏ ᴘʜᴇ́ᴘ           ʙɪ̣ ᴄʜᴀ̣̆ɴ'
+gui_title_filter_config: '    ᴄʜᴏ ᴘʜéᴘ           ʙị ᴄʜặɴ'
 
 filter_divider:
-  name: '&fᴛʜᴀ̉ &#5DB5F1ʟᴏ̣ᴄ'
+  name: '&fᴛʜả &#5DB5F1ʟọᴄ'
   lore:
     - ''
-    - ' &#5DB5F1ℹ ᴛʜᴏ̂ɴɢ ᴛɪɴ:'
+    - ' &#5DB5F1ℹ ᴛʜôɴɢ ᴛɪɴ:'
     - '  &8• &fBên trái: vật phẩm được phép'
     - '  &8• &fBên phải: vật phẩm bị chặn'
     - ''
@@ -367,9 +368,9 @@ bedrock:
 
     button_names:
       storage: Mở kho
-      exp: Nhận EXP
-      stacker: Quản lý chồng
-      sell_and_exp: Bán + Nhận EXP
+      exp: Nhận Exp
+      stacker: Quản lý stack
+      sell_and_exp: Bán + Nhận Exp
       sell_all: Bán vật phẩm
       view_info: Xem thông tin
       back: Quay lại
@@ -407,7 +408,7 @@ bedrock:
     spawner_info:
       - ''
       - '§9☀ §fThông tin:'
-      - '  §8• §fXếp chồng: §e{stack_size}'
+      - '  §8• §fStack: §e{stack_size}'
       - '  §8• §fPhạm vi: §e{range} §7khối'
       - '  §8• §fSinh vật: §e{min_mobs}§7-§e{max_mobs}'
       - '  §8• §fThời gian chờ: §e{delay}§7 giây'

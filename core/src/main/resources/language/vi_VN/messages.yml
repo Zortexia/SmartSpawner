@@ -25,7 +25,7 @@ missing_message_key:
 #              Player Interaction (General)
 # ──────────────────────────────────────────────────────
 spawner_activated:
-  message: 'Spawner đã được&a kích hoạt. &rBây giờ bạn có thể nhận vật phẩm và EXP.'
+  message: 'Spawner đã được&a kích hoạt. &rBây giờ bạn có thể nhận vật phẩm và Exp.'
   sound: block.beacon.activate
 
 spawner_protected:
@@ -55,17 +55,17 @@ action_failed:
 #             Spawner - Main GUI Interactions
 # ──────────────────────────────────────────────────────
 no_exp:
-  message: '&#FF4444Không có EXP để nhận'
+  message: '&#FF4444Không có Exp để nhận'
   sound: block.note_block.pling
 
 exp_collected:
   message: 'Bạn đã nhận &a{exp} &fđiểm kinh nghiệm.'
-  action_bar: '&a+{exp} EXP'
+  action_bar: '&a+{exp} Exp'
   sound: entity.experience_orb.pickup
 
 exp_collected_with_mending:
   message: 'Bạn đã nhận &a{exp} &fđiểm kinh nghiệm. &c{exp_mending} &fđã được dùng để sửa đồ bằng Mending.'
-  action_bar: '&a+{exp} EXP &f| &c-{exp_mending} đã dùng cho Mending'
+  action_bar: '&a+{exp} Exp &f| &c-{exp_mending} đã dùng cho Mending'
   sound: entity.experience_orb.pickup
 
 # ──────────────────────────────────────────────────────
@@ -79,7 +79,7 @@ click_too_fast:
 #         Spawner - Stacker GUI Interaction
 # ──────────────────────────────────────────────────────
 spawner_stacker_minimum_reached:
-  message: '&#FF4444Đã đạt giới hạn tối thiểu. &f{amount} &csẽ vẫn được xếp chồng.'
+  message: '&#FF4444Đã đạt giới hạn tối thiểu. &f{amount} &csẽ vẫn được stack.'
   sound: block.note_block.pling
 
 spawner_cannot_remove_last:
@@ -91,23 +91,23 @@ spawner_insufficient_quantity:
   sound: block.note_block.pling
 
 stacker_drop_blocked:
-  message: '&#FF4444Menu xếp chồng bị tắt khi spawner này có tỉ lệ rơi.'
+  message: '&#FF4444Menu stack bị tắt khi spawner này có tỉ lệ rơi.'
   sound: block.note_block.pling
 
 # ──────────────────────────────────────────────────────
 #             Spawner - Stack Interaction
 # ──────────────────────────────────────────────────────
 spawner_different:
-  message: '&#FF4444Các spawner phải cùng loại để xếp chồng.'
+  message: '&#FF4444Các spawner phải cùng loại để stack.'
   action_bar: '&#FF4444Các spawner phải cùng loại.'
   sound: block.note_block.pling
 
 spawner_stack_full:
-  action_bar: '&#FF4444Giới hạn xếp chồng tối đa: &f{max}'
+  action_bar: '&#FF4444Giới hạn stack tối đa: &f{max}'
   sound: block.note_block.pling
 
 spawner_stack_success:
-  action_bar: '&aBạn đã xếp chồng thành công &f{amount} &aspawner.'
+  action_bar: '&aBạn đã stack thành công &f{amount} &aspawner.'
   sound: entity.player.levelup
 
 # ──────────────────────────────────────────────────────
@@ -141,8 +141,8 @@ drop_failed:
   sound: block.note_block.pling
 
 sneak_break_blocked:
-  message: '&#FF4444Bạn không thể phá cả chồng khi spawner này có tỉ lệ rơi.'
-  action_bar: '&#FF4444Không thể phá cả chồng.'
+  message: '&#FF4444Bạn không thể phá cả stack khi spawner này có tỉ lệ rơi.'
+  action_bar: '&#FF4444Không thể phá cả stack.'
   sound: block.note_block.pling
 
 # ──────────────────────────────────────────────────────
@@ -158,11 +158,11 @@ sell_success:
   sound: block.note_block.bell
 
 sell_and_exp_success:
-  message: 'Bạn đã bán &e{amount} &fvật phẩm với giá &a${price}&f và nhận &a{exp} &fEXP.'
-  action_bar: '&a+${price} &f| &a+{exp} EXP'
+  message: 'Bạn đã bán &e{amount} &fvật phẩm với giá &a${price}&f và nhận &a{exp} &fExp.'
+  action_bar: '&a+${price} &f| &a+{exp} Exp'
   sound: block.note_block.bell
 
 sell_and_exp_success_with_mending:
-  message: 'Bạn đã bán &e{amount} &fvật phẩm với giá &a${price}&f, nhận &a{exp} &fEXP &f(&c{exp_mending} &fđã dùng cho Mending).'
-  action_bar: '&a+${price} &f| &a+{exp} EXP &f(&c-{exp_mending} Mending)'
+  message: 'Bạn đã bán &e{amount} &fvật phẩm với giá &a${price}&f, nhận &a{exp} &fExp &f(&c{exp_mending} &fđã dùng cho Mending).'
+  action_bar: '&a+${price} &f| &a+{exp} Exp &f(&c-{exp_mending} Mending)'
   sound: block.note_block.bell

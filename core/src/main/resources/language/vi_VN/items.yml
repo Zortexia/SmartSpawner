@@ -10,10 +10,10 @@ smart_spawner:
     loot_items_empty: '  &#ecf0f1 •  Không có'
     lore:
       - ''
-      - ' &#5DB5F1 ᴄʜɪ ᴛɪᴇ̂́ᴛ:'
-      - '  &#ecf0f1 • &fEXP nhận: &a{exp}'
+      - ' &#5DB5F1 ᴄʜɪ ᴛɪếᴛ:'
+      - '  &#ecf0f1 • &fExp nhận: &a{exp}'
       - ''
-      - ' &#5DB5F1 ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ ʀᴏ̛ɪ:'
+      - ' &#5DB5F1 ᴠậᴛ ᴘʜẩᴍ ʀơɪ:'
       - '{loot_items}'
       - ''
   # Entity-specific sections override default per key. Unspecified keys use default.
@@ -23,10 +23,10 @@ smart_spawner:
     loot_items_empty: '  &#FFF0F7 •  Không có'
     lore:
       - ''
-      - ' &#FF77B7 ᴄʜɪ ᴛɪᴇ̂́ᴛ:'
-      - '  &#FFF0F7 • &fEXP nhận: &#FF8FC7{exp}'
+      - ' &#FF77B7 ᴄʜɪ ᴛɪếᴛ:'
+      - '  &#FFF0F7 • &fExp nhận: &#FF8FC7{exp}'
       - ''
-      - ' &#FF77B7 ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ ʀᴏ̛ɪ:'
+      - ' &#FF77B7 ᴠậᴛ ᴘʜẩᴍ ʀơɪ:'
       - '{loot_items}'
       - ''
   BLAZE:
@@ -35,10 +35,10 @@ smart_spawner:
     loot_items_empty: '  &#FFF4CC •  Không có'
     lore:
       - ''
-      - ' &#FFB300 ᴄʜɪ ᴛɪᴇ̂́ᴛ:'
-      - '  &#FFF4CC • &fEXP nhận: &#FFD54F{exp}'
+      - ' &#FFB300 ᴄʜɪ ᴛɪếᴛ:'
+      - '  &#FFF4CC • &fExp nhận: &#FFD54F{exp}'
       - ''
-      - ' &#FFB300 ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ ʀᴏ̛ɪ:'
+      - ' &#FFB300 ᴠậᴛ ᴘʜẩᴍ ʀơɪ:'
       - '{loot_items}'
       - ''
 
@@ -51,10 +51,10 @@ item_spawner:
     loot_items_empty: '  &#ecf0f1 •  Không có'
     lore:
       - ''
-      - ' &#5DB5F1 ᴄʜɪ ᴛɪᴇ̂́ᴛ:'
-      - '  &#ecf0f1 • &fEXP nhận: &a{exp}'
+      - ' &#5DB5F1 ᴄʜɪ ᴛɪếᴛ:'
+      - '  &#ecf0f1 • &fExp nhận: &a{exp}'
       - ''
-      - ' &#5DB5F1 ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ ʀᴏ̛ɪ:'
+      - ' &#5DB5F1 ᴠậᴛ ᴘʜẩᴍ ʀơɪ:'
       - '{loot_items}'
       - ''
   # Material-specific sections override default per key. Unspecified keys use default.
@@ -64,10 +64,10 @@ item_spawner:
     loot_items_empty: '  &#EAFDFF •  Không có'
     lore:
       - ''
-      - ' &#00E5FF ᴄʜɪ ᴛɪᴇ̂́ᴛ:'
-      - '  &#EAFDFF • &fEXP nhận: &#00B8D4{exp}'
+      - ' &#00E5FF ᴄʜɪ ᴛɪếᴛ:'
+      - '  &#EAFDFF • &fExp nhận: &#00B8D4{exp}'
       - ''
-      - ' &#00E5FF ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ ʀᴏ̛ɪ:'
+      - ' &#00E5FF ᴠậᴛ ᴘʜẩᴍ ʀơɪ:'
       - '{loot_items}'
       - ''
   AMETHYST_SHARD:
@@ -76,10 +76,10 @@ item_spawner:
     loot_items_empty: '  &#F5ECFF •  Không có'
     lore:
       - ''
-      - ' &#B66CFF ᴄʜɪ ᴛɪᴇ̂́ᴛ:'
-      - '  &#F5ECFF • &fEXP nhận: &#D6A5FF{exp}'
+      - ' &#B66CFF ᴄʜɪ ᴛɪếᴛ:'
+      - '  &#F5ECFF • &fExp nhận: &#D6A5FF{exp}'
       - ''
-      - ' &#B66CFF ᴠᴀ̣̂ᴛ ᴘʜᴀ̂̉ᴍ ʀᴏ̛ɪ:'
+      - ' &#B66CFF ᴠậᴛ ᴘʜẩᴍ ʀơɪ:'
       - '{loot_items}'
       - ''
 
